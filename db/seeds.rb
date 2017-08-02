@@ -1,3 +1,24 @@
+User.create!(
+    email: "ethan.stewart35@gmail.com",
+    password: "900124193",
+    password_confirmation: "900124193",
+    name: "Admin User",
+    roles: "site_admin"
+)
+  
+puts "1 Admin user created"
+
+
+User.create!(
+    email: "test@test.com",
+    password: "testing",
+    password_confirmation: "testing",
+    name: "Regular User",
+)
+  
+puts "1 Regular user created"
+
+
 3.times do |topic|
   Topic.create!(
       title: "Topic #{topic}"
@@ -9,13 +30,7 @@ puts "3 topics created"
 10.times do |blog|
   Blog.create!(
     title: "My Blog Post #{blog}",
-    body: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
-      eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-      voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
-      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-      incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam 
-      corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate 
-      velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+    body: "This is some weird error messages.",
     topic_id: Topic.last.id
   )
 end
