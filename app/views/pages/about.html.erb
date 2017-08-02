@@ -5,12 +5,53 @@
     <hr>
     
     <div class="row">
-      <div class="col-md-5">
+      <div class="col-md-4">
         <%= image_tag "profile.png", width: 300, alt: "Profile Image", class: 'profile-image' %>
       </div>
       
-      <div class="col-md-7">
+      <div class="col-md-8">
         <p>With about 2-3 years of coding experience, I am trying to learn as much as possible to be a great coder and give a great final project to the client. My job is also about communicating with the client so there are no miscommunications and to get the exact result the client wants.</p>
+        
+        <p>
+          <button
+           class="btn btn-primary"
+           type="button"
+           data-toggle="collapse"
+           data-target="#jobHistory"
+           aria-expanded="false"
+           aria-controler="jobHistory"
+          >
+            Job History
+          </button>
+          
+          <button
+           class="btn btn-primary"
+           type="button"
+           data-toggle="collapse"
+           data-target="#education"
+           aria-expanded="false"
+           aria-controler="education"
+          >
+            Education
+          </button>
+        </p>
+        
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              None Yet
+            </div>
+          </div>
+          
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              Bonneville High School
+            </div>
+            <div class="card card-block">
+              Code to Success Bootcamp
+            </div>
+          </div>
+        </p>
       </div>
     </div>
   </div>
